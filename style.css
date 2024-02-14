@@ -1,0 +1,326 @@
+.main {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "contentLeft contentCenter contentRight";
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+body {
+  background-color: rgb(246, 241, 241);
+}
+
+h2 {
+  margin: 0%;
+}
+
+.header {
+  grid-area: header;
+  display: flex;
+  gap: 2rem;
+}
+
+.headerLeft {
+  display: flex;
+  width: 50%;
+}
+
+.userInfo {
+  width: 80%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.userInfo p {
+  font-size: 15px;
+}
+
+.userInfo h3,
+.userInfo h4 {
+  margin: 0;
+}
+
+.headerRight {
+  width: 50%;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerRight .userStatistics2 {
+  margin-top: 50px;
+  width: auto;
+}
+
+.data {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-items: flex-start;
+  border-top: 0.5px solid gray;
+  padding: 7px;
+}
+
+#txt {
+  padding-right: 13px;
+}
+
+.userStatistics1,
+.userStatistics2 {
+  width: 50%;
+}
+
+.userStatistics2 h5,
+h1 {
+  margin: 0%;
+}
+
+#userimg {
+  border-radius: 50%;
+  border: 8px solid #e5b1b1;
+  width: 130px;
+  height: 130px;
+  margin: 50px;
+}
+
+.about {
+  background-color: #ffffff;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.status {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: #1ab394;
+  margin-top: 3px;
+}
+
+.friends {
+  background-color: #ffffff;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.profiles img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 2%;
+}
+
+#user {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+#icon {
+  margin-top: 60%;
+  left: -23px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  position: relative;
+}
+#icon1 {
+  margin-top: 440%;
+  position: relative;
+  left: -23px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.contentLeft {
+  margin-left: 10%;
+  display: grid;
+  gap: 2rem;
+}
+
+.onlineStatus {
+  display: flex;
+}
+
+.about,
+.friends {
+  padding: 7%;
+}
+
+.contentCenter {
+  background-color: #ffffff;
+  margin-left: 7%;
+}
+
+.userProfile table {
+  border-collapse: collapse;
+}
+.userProfile table td {
+  justify-content: space-between;
+  border: 1px solid gray;
+}
+
+.profileInfo {
+  display: flex;
+}
+
+.profileInfo h2,
+p {
+  margin: 0%;
+}
+
+.user1 {
+  display: flex;
+}
+.centerUpper {
+  padding: 4%;
+}
+.centerLower {
+  background-color: #f9f9f9;
+  padding: 4%;
+}
+.contentRight {
+  margin-left: 10%;
+  display: flex;
+  border-left: 1px solid black;
+}
+
+.triangle1 {
+  background-color: #ffffff;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  margin-top: 20px;
+  z-index: -1;
+  margin-left: 41px;
+  transform: rotate(45deg);
+}
+
+.triangle2 {
+  background-color: #ffffff;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  margin-top: 270px;
+  z-index: -1;
+  margin-left: 41px;
+  transform: rotate(45deg);
+}
+
+.event1 {
+  margin-right: 5%;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 5%;
+  overflow: hidden;
+}
+.calenderr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#Btn {
+  padding: 15px;
+}
+
+.buton button {
+  background-color: #1ab394;
+  border: none;
+  color: #ffffff;
+  border-radius: 7px;
+}
+
+#c,
+#d,
+.discription h2 {
+  color: #6ea9d9;
+}
+
+@media screen and (max-width: 425px) {
+  .main {
+    grid-template-areas:
+      "header"
+      "contentLeft"
+      "contentCenter"
+      "contentRight";
+    width: fit-content;
+    gap: 1rem;
+    padding: 2rem;
+  }
+  .header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: center;
+  }
+  .headerLeft,
+  .headerRight {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+  #userimg {
+    padding: 0%;
+    margin-left: 0%;
+  }
+  .userInfo {
+    flex-wrap: wrap;
+  }
+  .contentLeft,
+  .contentCenter {
+    margin: 0%;
+  }
+  .event1 {
+    margin: 0%;
+  }
+  .userStatistics1 {
+    width: 100%;
+  }
+  .userStatistics2 {
+    margin-top: 0px;
+  }
+  .contentCenter {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 1100px) {
+  .main {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "contentLeft contentRight"
+      "contentCenter contentCenter";
+    width: fit-content;
+    gap: 1rem;
+    padding: 2rem;
+  }
+  .headerLeft {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+  }
+  .userInfo p {
+    font-size: 120%;
+    width: 350px;
+  }
+  .userInfo {
+    justify-content: center;
+  }
+  .userStatistics2 {
+    width: auto;
+  }
+  .graph {
+    width: 100%;
+    display: block;
+  }
+}
